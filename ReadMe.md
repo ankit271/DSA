@@ -87,3 +87,12 @@ DSA/
 │ ├── insertion.cpp
 │ ├── merge.cpp
 │ └── quick.cpp
+|
+├── structure/
+|
+├── vector/
+|
+├── linked list/
+|
+
+

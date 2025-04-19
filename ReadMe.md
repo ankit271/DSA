@@ -71,9 +71,8 @@ This repository contains implementations of various data structures and algorith
 g++ filename.cpp -o output
 ```
 
-
 ## Folder Structure
-
+```
 DSA/
 │
 ├── README.md

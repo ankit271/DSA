@@ -69,6 +69,8 @@ This repository contains implementations of various data structures and algorith
 ### Compilation
 ```bash
 g++ filename.cpp -o output
+```
+
 
 ## Folder Structure
 

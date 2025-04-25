@@ -1,20 +1,34 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 #include <algorithm> 
 
 using namespace std;
 
 int main(){
 
-    vector<int> data = {5, 1, 4, 2, 8};
+     stack<int> s;
 
-    data.push_back(13);
+     s.push(1);
+     s.push(10);
+     s.push(100);
+     s.push(1000);
 
-    sort(data.begin(),data.end());
+     while (!s.empty())
+     {
+         std::cout << s.top() << " ";
+         s.pop();
+     }
 
-    for(int num: data){
-        cout << num << endl;
-    }
+     // vector<int> data = {5, 1, 4, 2, 8};
 
-    return 0;
+     // data.push_back(13);
+
+     // sort(data.begin(),data.end());
+
+     // for(int num: data){
+     //     cout << num << endl;
+     // }
+
+     return 0;
 }

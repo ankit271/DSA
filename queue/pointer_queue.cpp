@@ -27,6 +27,11 @@ class Queue{
         int size(){
             return rear+1;
         }
+
+        ~Queue(){   // destructor to free memory
+            cout << "Descructor called" << endl;
+            delete[] arr;   
+        }
     
 };
 

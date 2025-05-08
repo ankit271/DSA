@@ -9,6 +9,7 @@
         "xiosbase": "cpp",
         "xlocale": "cpp",
         "xutility": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "xstring": "cpp"
     }
 }

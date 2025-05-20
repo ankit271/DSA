@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 days of React</title>
+</head>
+<style>
+    .title {
+        color: blue;
+        font-size: 24px;
+    }
+</style>
+
+<body>
+
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"
+        integrity="sha512-Y37Caenc5CZqwSMwWZj+5uxkB3Loc9yJNHvb+eSwEsT6nhURSrPZo39vTnb5g8UvOGCNXRbQ+xQvnqr2rR9nRw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/babel">
+        // const App = () => {
+        //     return (
+        //         <div>
+        //             <h1>Hello, World!</h1>
+        //             <p>Welcome to 30 Days of React</p>
+        //         </div>
+        //     );
+        // };
+        const style = {'border': '1px solid dogerblue', 'padding': '10px', 'backgroundColor': '#f0f0f0'}
+        const headerMsg = '30 Days of React'
+        const prerequisites = ['HTML', 'CSS', 'JavaScript']
+        const listItem = prerequisites.map( p => <li>{p}</li>)
+        const header = (
+            <header style={style}>
+                <h1>{headerMsg}</h1>                
+                <p>React is a JavaScript library for building user interfaces.</p>
+                <p>It allows developers to create large web applications that can change data, without reloading the page.</p>                
+            </header>
+        )
+        
+        const main =(
+            <main className='title'>
+                <p>React is fast, scalable, and simple.</p>
+                <strong>Prerequisite : - </strong> <ul>{listItem}</ul>
+            </main>
+        )
+        const footer = (
+            <footer>
+                <p>© 2025 {headerMsg}</p>
+                <p>All rights reserved.</p>
+            </footer>
+        )
+
+        const app = (
+            <div>
+                {header}
+                {main}
+                {footer}
+            </div> 
+        )
+
+        ReactDOM.render(app, document.getElementById('root'));          
+    </script>
+</body>
+</html>
